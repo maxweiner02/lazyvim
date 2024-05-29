@@ -8,3 +8,7 @@ vim.keymap.set(
   require("telescope.builtin").resume,
   { noremap = true, silent = true, desc = "Resume" }
 )
+
+vim.keymap.set("n", "<leader>H", function()
+  vim.cmd("Alpha")
+end, { noremap = true, silent = true, desc = "Home Screen" })
